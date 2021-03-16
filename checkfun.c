@@ -39,7 +39,7 @@ int checkfun(const char *format, t_printf funs[], va_list arg_list)
 				else
 					return (-1);
 			}
-			i + i = 1;
+			i = i + 1;
 		}
 		else
 		{

@@ -9,7 +9,6 @@
 int _printf(const char *format, ...)
 {
 	va_list list;
-	unsigned int i = 0;
 	int p;
 
 	t_printf functions[] = {
