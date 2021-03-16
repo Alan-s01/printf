@@ -16,6 +16,8 @@ int _printf(const char *format, ...)
 		{"c", print_char},
 		{"s", print_string},
 		{"%", print_percent},
+		{"d", print_int},
+		{"i", print_int},
 		{NULL, NULL}
 	};
 
@@ -23,7 +25,7 @@ int _printf(const char *format, ...)
 		return (-1);
 
 	va_start(list, format);
-	p = print(format, functions, list);
+	p = checkfun(format, functions, list);
 	va_end(list);
 	return (p);
 }
